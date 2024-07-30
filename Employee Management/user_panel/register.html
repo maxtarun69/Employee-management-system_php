@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Register - Employee Management System</title>
+     
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="had">Register for the Employee Management System</h1>
+        <form action="register.php" method="post">
+            <table style="width: 100%;" >
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Contact:</label></td>
+                    <td><input type="text" name="contact" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="retry_password">Retry Password:</label></td>
+                    <td><input type="password" name="retry_password" required></td>
+                </tr>
+            </table>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

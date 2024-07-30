@@ -1,0 +1,371 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pic1.jpg');
+    position: relative;
+}
+/* style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+
+/* Style the login container */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the login form */
+.login-container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container form button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+.had{
+    background-color: #0056b3;
+    color: #fff;
+    padding:15px;
+}
+
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 32px 18px;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 10px;
+    font-size: 20px;
+
+}
+nav ul li a:hover{
+    border-bottom: 3px solid red;
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Adjust color as needed */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; /* Adjust color as needed */
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Adjust hover background color as needed */
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff; /* Adjust color as needed */
+}
+
+/* CSS for dashboard */
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.sidebar-toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sidebar-toggle {
+    float: left;
+    padding: 0px 20px;
+    color: #fff;
+    font-size: 32px;
+    
+}
+.container {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  .container:hover {
+    transform: scale(1.05);
+  }
+  .container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  .container:hover a {
+    border-bottom: 2px solid blue;
+  }
+h2{
+    float:right;
+    color: #fff;
+}
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.employee {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.employee p {
+    margin: 5px 0;
+}
+
+.employee p strong {
+    font-weight: bold;
+}
+.edit-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edit-container h2 {
+    color: #333;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:transparent;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: solid red 2.5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    
+    opacity: 0.8;
+  }
+  
+ 
+  
+  .edit_container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+/* style.css */
+
+.submenu {
+  position: relative;
+}
+
+.sub-links {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.sub-menu-link:hover + .sub-links {
+  display: block;
+}
+

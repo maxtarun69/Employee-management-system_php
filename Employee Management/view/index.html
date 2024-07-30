@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Employee Management System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #1e90ff; /* Blue background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Employee Management System</h1>
+    <div class="button-container">
+      <button class="button" onclick="adminLogin()">Admin Login</button>
+      <button class="button" onclick="userLogin()">User Login</button>
+    </div>
+  </div>
+
+  <script>
+    function adminLogin() {
+      // Redirect to admin login page
+      window.location.href = "../admin_panel/admin_login.html";
+    }
+
+    function userLogin() {
+      // Redirect to user login page
+      window.location.href = "../user_panel/user_login.html";
+    }
+  </script>
+</body>
+</html>
